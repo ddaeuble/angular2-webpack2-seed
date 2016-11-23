@@ -19,6 +19,7 @@ A basic angular 2.x (ng2) with webpack 2.x project-setup / seed / starter.
 | `/.gitignore`               | Git configuration: don't manage downloaded dependency-files (node_modules-folder), auto-generated files our own build (dist-folder) or npm-log-files (npm-debug.log) |
 | **`/.git/`**                | Git repository (versioning) |
 | `/README.md`                | this readme-file |
+| `/LICENSE`                  | the MIT-license-file |
 
 ### Application setup/configuration
 | file/folder                 | description |
@@ -122,6 +123,7 @@ A basic angular 2.x (ng2) with webpack 2.x project-setup / seed / starter.
 * https://webpack.github.io/docs/code-splitting.html
 
 ### Special topics
+* https://confluence.atlassian.com/bitbucketserver/markdown-syntax-guide-776639995.html
 * https://angular.io/docs/ts/latest/guide/style-guide.html
 * https://angular.io/docs/ts/latest/guide/server-communication.html
 * https://css-tricks.com/lets-learn-es2015/

@@ -1,0 +1,72 @@
+{
+    "name": "angular2-webpack2-seed",
+    "version": "1.0.0",
+    "description": "A basic angular 2.x (ng2) with webpack 2.x project-setup / seed / starter.",
+    "author": "ddaeuble <danieldaeuble@web.de>",
+    "keywords": [
+        "angularjs",
+        "angular",
+        "2.0",
+        "javascript",
+        "framework",
+        "typescript",
+        "webpack",
+        "tslint",
+        "starter",
+        "seed",
+        "project",
+        "setup",
+        "ddaeuble"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ddaeuble/angular2-webpack2-seed.git"
+    },
+    "homepage": "angular2-webpack2-seed.ddaeuble.de",
+    "license": "MIT",
+    "dependencies": {
+        "@angular/common": "^2.1.1",
+        "@angular/compiler": "^2.1.1",
+        "@angular/core": "^2.1.1",
+        "@angular/forms": "^2.1.1",
+        "@angular/http": "^2.1.1",
+        "@angular/platform-browser": "^2.1.1",
+        "@angular/platform-browser-dynamic": "^2.1.1",
+        "@angular/router": "^3.1.0",
+        "@angularclass/hmr": "1.2.2",
+        "angular-in-memory-web-api": "~0.1.5",
+        "core-js": "^2.4.1",
+        "reflect-metadata": "^0.1.8",
+        "rxjs": "5.0.0-beta.12",
+        "zone.js": "^0.6.25"
+    },
+    "devDependencies": {
+        "@angularclass/hmr-loader": "3.0.2",
+        "@types/core-js": "^0.9.34",
+        "@types/node": "^6.0.45",
+        "angular2-template-loader": "^0.4.0",
+        "awesome-typescript-loader": "^2.2.4",
+        "codelyzer": "^1.0.0-beta.3",
+        "copy-webpack-plugin": "^4.0.0",
+        "css-loader": "^0.23.1",
+        "extract-text-webpack-plugin": "^1.0.1",
+        "file-loader": "^0.8.5",
+        "html-loader": "^0.4.3",
+        "json-loader": "^0.5.4",
+        "open-browser-webpack-plugin": "^0.0.3",
+        "rimraf": "^2.5.2",
+        "style-loader": "^0.13.1",
+        "to-string-loader": "^1.1.4",
+        "tslint": "^3.15.1",
+        "typescript": "^2.0.3",
+        "webpack": "2.1.0-beta.27",
+        "webpack-dev-server": "2.1.0-beta.11",
+        "webpack-merge": "^0.15.0"
+    },
+    "scripts": {
+        "start": "webpack-dev-server --config webpack.dev.config.js",
+        "build": "rimraf dist/ && webpack -p --config webpack.prod.config.js",
+        "build:watch": "npm run build -- --watch",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    }
+}
