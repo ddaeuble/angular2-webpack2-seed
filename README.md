@@ -34,9 +34,9 @@ A basic angular 2.x (ng2) with webpack 2.x project-setup / seed / starter.
 | `/webpack.prod.config.js`   | Webpack configuration -- used for creating productive builds (stored in dist-folder) |
 | `/tslint.json`              | TSLint configuration -- used by the Visual Studio Code extension for checking the code quality (linting) |
 | `/.editorconfig`            | Visual Studio Code configuration |
-| `/.vscode/`...               | Visual Studio Code configuration |
+| `/.vscode/`...              | Visual Studio Code configuration |
 | `/.gitignore`               | Git configuration: don't manage downloaded dependency-files (node_modules-folder), auto-generated files our own build (dist-folder) or npm-log-files (npm-debug.log) |
-| `/.git/`...                  | Git repository (versioning) |
+| `/.git/`...                 | Git repository (versioning) |
 | `/README.md`                | this readme-file |
 | `/LICENSE`                  | the MIT-license-file |
 
