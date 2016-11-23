@@ -13,7 +13,7 @@ A basic angular 2.x (ng2) with webpack 2.x project-setup / seed / starter.
 5. clone git repository (download project):
   * `cd "path/to/project/dir/parent"`
   * `git clone https://github.com/ddaeuble/angular2-webpack2-seed.git`
-6. open Visual Studio Code, open directory newly-created project-dir
+6. start Visual Studio Code and open newly-created project-dir
 7. open command line, navigate inside your project-dir (if not using your IDE's command line) and install project-dependencies with npm:
   * `npm install`
 8. start or build your application with:
@@ -34,9 +34,9 @@ A basic angular 2.x (ng2) with webpack 2.x project-setup / seed / starter.
 | `/webpack.prod.config.js`   | Webpack configuration -- used for creating productive builds (stored in dist-folder) |
 | `/tslint.json`              | TSLint configuration -- used by the Visual Studio Code extension for checking the code quality (linting) |
 | `/.editorconfig`            | Visual Studio Code configuration |
-| **`/.vscode/`**             | Visual Studio Code configuration |
+| *`/.vscode/`*               | Visual Studio Code configuration |
 | `/.gitignore`               | Git configuration: don't manage downloaded dependency-files (node_modules-folder), auto-generated files our own build (dist-folder) or npm-log-files (npm-debug.log) |
-| **`/.git/`**                | Git repository (versioning) |
+| *`/.git/`*                  | Git repository (versioning) |
 | `/README.md`                | this readme-file |
 | `/LICENSE`                  | the MIT-license-file |
 
@@ -48,24 +48,24 @@ A basic angular 2.x (ng2) with webpack 2.x project-setup / seed / starter.
 | `/src/vendor.ts`            | index-file collecting all vendor-imports so webpack can generate an extra vendor-bundle besides our app-bundle with (only) our own sourcecode ; how it works: webpack analyzes our code for import-statements and if an import is used in both bundles (app and vendor), that import/chunk will be extracted/linked and copied to the vendor-bundle only |
 | `/src/polyfills.ts`         | index-file collecting all polyfills-imports so webpack can generate an extra polyfills-bundle besides our app- and our vendor-bundle |
 | `/src/custom-typings.d.ts`  | custom type definitions for the TypeScript compiler: as you want to use third-party libraries that are only available as JavaScript (no @types-declarations provided) or there are some implicitely-available variables, you must declare those functions/variables manually so the TypeScript compiler can recognize them in your code and doesn't throw errors |
-| **`/src/public/`**          | all static content to be delivered directly to the productive environment (subfolder-structure will stay the same) such as images, extra style- and script-files, favicon.ico, robots.txt, ... |
+| *`/src/public/`*            | all static content to be delivered directly to the productive environment (subfolder-structure will stay the same) such as images, extra style- and script-files, favicon.ico, robots.txt, ... |
 
 ### Application source code
 | file/folder                 | description |
 |-----------------------------|-------------|
-| **`/src/app/`**             | actual code of our application |
+| *`/src/app/`*               | actual code of our application |
 | `/src/app/app.module.ts`    | entry point/initialization of the application |
 | `/src/app/app.component.ts` | root component of the app combining all other components as a DOM-tree (or by a placeholder 'router-outlet') |
-| **`/src/app/components/`**  | parts/components of our application (customly combined html-elements together with related styles and event-handling code) |
-| **`/src/app/views/`**       | pages/views of our application (combined components that represent a complete page) |
-| **`/src/app/services/`**    | code/functions that are "independent" of our visible part of the application (but used by those views/components) such as REST-clients (data-access) or complex calculation/data processing |
-| **`/src/app/models/`**      | datamodel-classes shared by our services and our views/components |
+| *`/src/app/components/`*    | parts/components of our application (customly combined html-elements together with related styles and event-handling code) |
+| *`/src/app/views/`*         | pages/views of our application (combined components that represent a complete page) |
+| *`/src/app/services/`*      | code/functions that are "independent" of our visible part of the application (but used by those views/components) such as REST-clients (data-access) or complex calculation/data processing |
+| *`/src/app/models/`*        | datamodel-classes shared by our services and our views/components |
 
 ### Generated/downloaded dependencies, build- and log-files
 | file/folder                 | description |
 |-----------------------------|-------------|
-| **`/node_modules/`**        | local copy of all dependencies used in the project (see package.json) |
-| **`/dist/`**                | final build of our project, ready for deploying on our production server |
+| *`/node_modules/`*          | local copy of all dependencies used in the project (see package.json) |
+| *`/dist/`*                  | final build of our project, ready for deploying on our production server |
 | `/npm-debug.log`            | log-file of npm (if something goes wrong while running npm-scripts) |
 
 
