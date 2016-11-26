@@ -22,7 +22,8 @@ import { InMemoryHeroService } from './services/hero-in-memory.service';
     FormsModule,
     AppRoutingModule,
     HttpModule,
-    InMemoryWebApiModule.forRoot(InMemoryHeroService)
+    InMemoryWebApiModule.forRoot(InMemoryHeroService, {passThruUnknownUrl: true})
+    // attention: InMemoryWebApiModule blocks original XHRBackend so you can only do http-requests to this InMemory-service, passThruUnknownUrl should resolve this problem but didn't work in my tests
   ],
   declarations: [
     AppComponent,

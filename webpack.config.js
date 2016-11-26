@@ -49,6 +49,7 @@ module.exports = {
           //{ from: './src/styles.css' },
           //{ from: './src/favicon.ico' },
             { from: './src/public/' } // copies content of the public-folder directly to the output-path (not under a subdir 'public')
+            // attention: sometimes (while webpack-dev-server is running) CopyWebpackPlugin has problems with filenames containing spaces
         ])
     ]
 };

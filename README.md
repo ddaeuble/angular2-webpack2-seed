@@ -152,3 +152,4 @@ A basic angular 2.x (ng2) with webpack 2.x project-setup / seed / starter.
 * https://www.bennadel.com/blog/3169-adding-custom-typings-files-d-ts-in-an-angular-2-typescript-application.htm
 * https://palantir.github.io/tslint/rules/
 * https://github.com/mgechev/codelyzer
+* https://scotch.io/tutorials/angular-2-http-requests-with-observables
