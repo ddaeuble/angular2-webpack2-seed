@@ -13,10 +13,14 @@ A basic angular 2.x (ng2) with webpack 2.x project-setup / seed / starter.
 5. clone git repository (download project):
   * `cd "path/to/project/dir/parent"`
   * `git clone https://github.com/ddaeuble/angular2-webpack2-seed.git`
-6. start Visual Studio Code and open newly-created project-dir
-7. open command line, navigate inside your project-dir (if not using your IDE's command line) and install project-dependencies with npm:
+6. delete .git-folder and initialize as a new repository (to fork the project):
+  * `cd angular2-webpack2-seed`
+  * `rmdir -R -f .git`
+  * `git init`
+7. start Visual Studio Code and open newly-created project-dir
+8. open command line, navigate inside your project-dir (if not using your IDE's command line) and install project-dependencies with npm:
   * `npm install`
-8. start or build your application with:
+9. start or build your application with:
   * `npm start` to start in browser or
   * `npm run build` to compile and export to the dist-folder
 
